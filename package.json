@@ -1,7 +1,11 @@
 {
-  "name": "Po-Quo API",
+  "name": "Po-Quo",
   "version": "1.0.0",
-  "description": "",
+  "description": "A quote for sharing popular quotes.",
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  },
   "main": "app.js",
   "scripts": {
     "start": "node ./src/app",
