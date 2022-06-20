@@ -1,0 +1,17 @@
+<svg width="2205" height="1215" viewBox="0 0 2205 1215" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+        #black-line { 
+            stroke-dasharray: 6564.676px;
+            stroke-dashoffset: 6564.676px;
+            animation: x 16s ease-out forwards ; 
+            }
+
+        @keyframes x {
+
+            100%{
+                stroke-dashoffset: 0;
+                }
+        }
+    </style>
+<path id="black-line" d="M2001.5 1065.5C579 292.5 873.304 711.284 918.5 1023C950.278 1242.18 447.027 1291.57 117.92 1065.5C-331.652 756.674 706.721 548.564 317.42 433.087C109.421 371.389 -99.7809 338.775 65 199C388.219 -75.1699 1874 -81.0001 1543 296.5C1256.28 623.5 2339.4 360.215 2188.31 568.512" stroke="black" stroke-width="4"/>
+</svg>

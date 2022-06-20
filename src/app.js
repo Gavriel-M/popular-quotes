@@ -7,6 +7,8 @@ require("./helpers/connectToDb");
 const express = require("express");
 const app = express();
 
+const path = require('path');
+
 const chalk = require("chalk");
 const morgan = require("morgan");
 const cors = require("cors");
@@ -21,6 +23,7 @@ app.use(morgan(chalk.cyan(":method :url :status :response-time ms")));
 app.use(cors());
 
 app.use(express.json());
+app.use(express.static(path.join(_dirname + "public")));
 
 app.use("/api/users", userRouter);
 app.use("/api/quotes", authMiddleware, quoteRouter);

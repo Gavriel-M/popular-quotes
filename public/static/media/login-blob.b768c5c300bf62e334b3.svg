@@ -1,0 +1,16 @@
+<svg width="734" height="237" viewBox="0 0 834 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+        #blob { 
+            animation: x 14s ease-in-out alternate infinite; 
+
+            }
+
+        @keyframes x {
+
+            100%{
+                transform: translate(4px, -4px) rotate(-4deg);
+                }
+        }
+    </style>
+<path id="blob" d="M703.315 57.6998C785.919 99.6163 679.589 263.508 606.932 232.796C370 132.644 308.5 258 206.5 232.796C92.3608 204.592 55.4248 153.826 3.50012 57.6998C-48.4245 -38.4268 600.086 5.31758 703.315 57.6998Z" fill="#F0ECE3"/>
+</svg>

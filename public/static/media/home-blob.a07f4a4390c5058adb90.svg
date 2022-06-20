@@ -1,0 +1,20 @@
+<svg width="395" height="271" viewBox="0 0 395 271" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+        #blob { 
+            animation: x 18s linear forwards infinite; 
+            }
+
+        @keyframes x {
+
+             50%{
+                rotate: 5deg;
+                transform: translateX(15px) translateY(-10px) scale(0.92)
+                }
+            100%{
+                rotate: 0deg;
+                transform: scale(1)
+            }
+        }
+    </style>
+<path id="blob" d="M16.9998 149C-48.5 83.5 103.475 -39.2605 163 12.5001C220.5 62.5 365.258 8.6932 380 62.5C420 208.5 360.5 116.5 380 224C399.5 331.5 98.8535 230.854 16.9998 149Z" fill="#F0ECE3"/>
+</svg>
