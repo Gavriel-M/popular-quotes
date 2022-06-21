@@ -9,7 +9,6 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./src/app",
-    "start2": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

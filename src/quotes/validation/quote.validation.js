@@ -1,4 +1,4 @@
-const Joi = require("Joi");
+const Joi = require("joi");
 
 const quoteRule = { quote: Joi.string().min(2).max(1023).required() };
 const keyedByRule = { keyedBy: Joi.string().min(1).max(255).required() };

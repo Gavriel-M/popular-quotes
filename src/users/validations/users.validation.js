@@ -1,4 +1,4 @@
-const Joi = require("Joi");
+const Joi = require("joi");
 
 const emailRule = {
   email: Joi.string().email().min(5).max(255).trim().required(),
