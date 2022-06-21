@@ -41,5 +41,5 @@ app.listen(PORT, () =>
   console.log(
     chalk.blueBright.bold(`server run on : http://:localhost:${PORT}`)
   )
-);
+);  
 
