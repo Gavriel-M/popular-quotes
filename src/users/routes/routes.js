@@ -181,9 +181,9 @@ router.get("/userinfo", authMiddleware, async (req, res) => {
 router.put("/edituser", authMiddleware, async (req, res) => {
   try {
     const updatedUserInfo = req.body;
-
+    const lowercaseEmail = req.user.email.toLowerCase();
     const filter = {
-      email: req.user.email,
+      email: lowercaseEmail,
     };
 
     const afterUpdate = await usersModel.updateUser(filter, updatedUserInfo);

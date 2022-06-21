@@ -46,7 +46,8 @@ const UserSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", UserSchema);
 
-const selectUserByEmail = (email) => {
+const selectUserByEmail = (capitalEmail) => {
+  let email = capitalEmail.toLowerCase();
   return User.find({ email });
 };
 
@@ -58,14 +59,20 @@ const updateUser = (filter, updatedUser) => {
   return User.updateOne(filter, updatedUser);
 };
 
-const updateAfterPasswordReset = (email, password) => {
+const updateAfterPasswordReset = (capitalEmail, password) => {
+  let email = capitalEmail.toLowerCase();
   return User.updateOne(
     { email },
     { password, recoveryNumber: null, dateRecoveryNumber: null }
   );
 };
 
-const updateRecoveryParams = (email, recoveryNumber, dateRecoveryNumber) => {
+const updateRecoveryParams = (
+  capitalEmail,
+  recoveryNumber,
+  dateRecoveryNumber
+) => {
+  let email = capitalEmail.toLowerCase();
   return User.updateOne({ email }, { recoveryNumber, dateRecoveryNumber });
 };
 
@@ -73,10 +80,11 @@ const insertUser = (
   firstName,
   lastName,
   userName,
-  email,
+  capitalEmail,
   password,
   creatorAccount
 ) => {
+  let email = capitalEmail.toLowerCase();
   let user = new User({
     firstName,
     lastName,
