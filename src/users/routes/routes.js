@@ -200,7 +200,6 @@ router.get("/latestquote", async (req, res) => {
     const latestQuote = await quotesModel.latestQuote();
     return res.status(200).json(latestQuote);
   } catch(error){
-    console.log(error);
     res.status(500).json(error);
 
   }
