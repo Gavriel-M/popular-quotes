@@ -28,6 +28,8 @@ You will need a .env file at the root folder of the project, the contents of tha
 ### PASS = "Password for said EMAIL"
 ### SERVICE = "Name of the mailing service company"
 
+
+
 Also necessary is a config folder with a default.json file. 
 ### `default.json`
   Will contain a json object with "jwtKey" property, any string will work as this field is for jwt encryption. 
