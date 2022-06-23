@@ -19,6 +19,16 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:8181] to view it in your browser.
 
+## Enviroment file format
+
+You will need a .env file at the root folder of the project, the contents of that file is as follows:
+### DB = "Your database link"
+### HOST = "The Mail service hosting source"
+### EMAIL = "Mail address which the emails will be sent from"
+### PASS = "Password for said EMAIL"
+### SERVICE = "Name of the mailing service company"
+
+
 ## Learn More
 
 You can learn more about the developer at https://www.linkedin.com/in/gavriel-mor/ 
