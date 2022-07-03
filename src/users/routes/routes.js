@@ -205,4 +205,17 @@ router.get("/latestquote", async (req, res) => {
   }
 })
 
+//* GET Creator account? 
+router.get("/iscreator", authMiddleware, async (req, res) => {
+  try {
+  const users = await usersModel.selectUserByEmail(req.user.email);
+  if(users[0].creatorAccount){
+    return res.status(200).json({isCreator : true});
+  }
+  throw "user is not a creator account";
+} catch (error) {
+  res.status(501).json({ isCreator: false });
+}
+});
+
 module.exports = router;

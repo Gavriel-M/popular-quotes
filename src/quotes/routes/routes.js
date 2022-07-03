@@ -50,6 +50,10 @@ router.get("/allquotes", async (req, res) => {
 router.get("/myquotes", async (req, res) => {
   try {
     let user = req.user;
+    const creatorUser = await usersModel.selectUserByUsername(user.userName);
+    if(!creatorUser[0].creatorAccount){
+      throw "User is not registered as a creator account"
+    }
     const userQuotes = await quotesModel.findQuoteByUser(user.userName);
     if (userQuotes.length === 0) {
       throw "User has yet to quote anything";
