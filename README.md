@@ -6,7 +6,8 @@ Welcome to popular quotes app. This project was built using express and react.
 
 This project is a combination of variety of topics we studied during our full-stack course.
 
-Popular-quotes is a website for sharing and reading quotes of all types and languages. 
+Popular-quotes is a website for sharing and reading quotes of all types and languages.
+
 The website has a Node.js - express api along with a MongoDb database for it's back-end. While the front-end was built using React.js.
 
 
