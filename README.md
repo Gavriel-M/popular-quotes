@@ -7,7 +7,7 @@ Welcome to popular quotes app. This project was built using express and react.
 This project is a combination of variety of topics we studied during our full-stack course.
 
 Popular-quotes is a website for sharing and reading quotes of all types and languages. 
-The website has a Node.js - express api which is in charge of all HTTP requests as well as managing information in the database.
+The website has a Node.js - express api along with a MongoDb database for it's back-end. While the front-end was built using React.js.
 
 
 ## Available Scripts
@@ -39,3 +39,5 @@ Also necessary is a config folder with a default.json file.
 You can learn more about the developer at https://www.linkedin.com/in/gavriel-mor/ 
 
 To see the react front end repo, go to https://github.com/Gavriel-M/po-quo 
+
+Also, the project has been uploaded to heroku - you can view it here : https://po-quo.herokuapp.com/
